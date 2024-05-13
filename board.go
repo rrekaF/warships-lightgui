@@ -219,9 +219,9 @@ func (b *Board) Set(p pos, coord string, s state) error {
 
 	if p == Right {
 		x = x + boardWidth + delimiter
-		if b.b[x][y] != empty {
-			return nil
-		}
+		// if b.b[x][y] != empty {
+		// 	return nil
+		// }
 	}
 
 	b.b[x][y] = s
